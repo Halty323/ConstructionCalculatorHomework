@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DrywallActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="14dp"
+        android:backgroundTint="#177C3A"
+        android:text="Расчёт количества обоев"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearEditText" />
+
+    <LinearLayout
+        android:id="@+id/linearEditText"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_two">
+
+        <EditText
+            android:id="@+id/square"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="14dp"
+            android:background="#92DD8181"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Площадь используемой поверхности для гипсокартона (метры квадратные)"
+            android:inputType="textMultiLine"
+            android:padding="14dp"
+            android:textColor="#C5183A"
+            android:textColorHint="#E31818"
+            android:textSize="17sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/widthWallpaper"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="14dp"
+            android:background="#B1DFC1"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Ширина одной пластины (см)"
+            android:inputType="textMultiLine"
+            android:padding="14dp"
+            android:textColor="#177C3A"
+            android:textColorHint="#177C3A"
+            android:textSize="17sp"
+            android:textStyle="italic"
+            tools:ignore="TextFields" />
+
+        <EditText
+            android:id="@+id/heightWallpaper"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="14dp"
+            android:background="#B1DFC1"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Длина пластины (метры)"
+            android:inputType="textMultiLine"
+            android:padding="14dp"
+            android:textColor="#177C3A"
+            android:textColorHint="#177C3A"
+            android:textSize="17sp"
+            android:textStyle="italic"
+            tools:ignore="TextFields" />
+
+        <EditText
+            android:id="@+id/costWallpaper"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="14dp"
+            android:background="#B1DFC1"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Стоимость одной пластины (монет)"
+            android:inputType="textMultiLine"
+            android:padding="14dp"
+            android:textColor="#177C3A"
+            android:textColorHint="#177C3A"
+            android:textSize="17sp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/header_two"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:gravity="top"
+        android:text="Расчёт гипсокартона:"
+        android:textColor="#4C9063"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_one" />
+
+    <TextView
+        android:id="@+id/header_one"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="ПРИЛОЖЕНИЕ\nСТРОИТЕЛЬНЫЙ КАЛЬКУЛЯТОР"
+        android:textColor="#177C3A"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
